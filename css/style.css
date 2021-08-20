@@ -810,8 +810,10 @@ p {
 
 @media screen and (max-width: 850px) {
   .bg-hero {
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
+    -webkit-transform: rotate(90deg) scale(2);
+            transform: rotate(90deg) scale(2);
+    top: 0;
+    left: 0;
   }
 }
 
@@ -873,6 +875,9 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  img {
+    max-width: 250px;
   }
 }
 
@@ -1051,7 +1056,7 @@ img {
   text-align: center;
 }
 
-.skills h4 {
+.skills .skills-body.h5 {
   margin-top: 16px;
   text-align: center;
 }
@@ -1103,6 +1108,12 @@ body {
 
 ::-webkit-scrollbar {
   width: 8px;
+}
+
+@media screen and (max-width: 850px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 ::-webkit-scrollbar-track {
