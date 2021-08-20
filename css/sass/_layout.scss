@@ -207,12 +207,27 @@ img{
     
     flex-direction: column;
     justify-content: center;
-    h3{
+    h2{
         text-align: center;
     }
-    h5{
+    h4{
         margin-top: 16px;
         text-align: center;
+    }
+}
+
+.skills-body{
+    flex-direction: row;
+    display: flex;
+    position: relative;
+    padding: 24px 16px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@media  screen and (max-width: 850px) {
+    .skills-body{
+        flex-direction: column;
     }
 }
 
