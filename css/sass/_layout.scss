@@ -32,7 +32,9 @@
 }
 @media screen and (max-width:850px){
     .bg-hero{
-        transform: rotate(90deg);
+        transform: rotate(90deg) scale(2);
+        top: 0;
+        left: 0;
         
     }
 }
@@ -80,7 +82,10 @@ img{
     }
     .container{
         flex-direction: column;
-    }   
+    }
+    img{
+        max-width: 250px;
+    }
 }
 
 .list-works{
@@ -205,7 +210,7 @@ img{
     h3{
         text-align: center;
     }
-    h4{
+    h5{
         margin-top: 16px;
         text-align: center;
     }

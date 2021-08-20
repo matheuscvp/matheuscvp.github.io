@@ -21,6 +21,12 @@ body{
     width: 8px;
 }
 
+@media screen and (max-width:850px){
+    ::-webkit-scrollbar{
+        display: none;
+    }
+}
+
 ::-webkit-scrollbar-track{
     box-shadow: none;
 }
