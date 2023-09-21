@@ -40,14 +40,14 @@
 
     <header class="menu" id="section-00">
         <div class="menu-left">
-            <a href="#section-00" class="link menu-1">Home</a>
-            <a href="#section-01" class="link menu-2">About</a>
+            <a href="#section-01" class="link menu-1">About</a>
+            <a href="#section-05" class="link menu-2">Work Experience</a>
         </div>
         <div class="menu-logo menu-5">
             <h4>MP</h4>
         </div>
         <div class="menu-right">
-            <a href="#section-02" class="link menu-3">Works</a>
+            <a href="#section-02" class="link menu-3">Projects</a>
             <a href="#section-04" class="link menu-4">Contacts</a>
         </div>
     </header>
@@ -59,14 +59,12 @@
 
             <div>
                 <button type="button" class="square"
-                    onclick="smoothScroll(document.getElementById('section-02'))">Works</button>
-                <!--<a href="" class="square">Works</a>-->
+                    onclick="smoothScroll(document.getElementById('section-02'))">Projects</button>
             </div>
         </div>
         <div class="container-item mb-9">
             <img src="img/Foto-perfil.jpg" alt="">
         </div>
-        <!--<div class="container-item"></div>-->
     </section>
 
     <section class="about-me mt-tt" id="section-01">
@@ -75,15 +73,12 @@
         </div>
         <div>
             <p class="mt-5 ml-3 mr-3">
-                <!--o Matheus é uma pessoa pró-ativa e com espírito de liderança, 
-                    é dedicado no que faz e tenta sempre entregar da melhor forma possível, 
-                    gosta de trabalhar sozinho, mas tem boa desenvoltura com trabalhos em equipe. 
-                    As vezes é um pouco desorganizado, mas ele se atenta em melhorar cada vez mais e entregar o que lhe é proposto. 
-                    É uma pessoa divertida e de fácil convivência e confiança.-->
                 Hello there! I am Matheus Calixto Vaz Pinheiro.<br>
-                Software engineer with a focus on front-end development, looking for professional and personal growth opportunities.
+                Software engineer with a focus on front-end development, looking for professional and personal growth
+                opportunities.
                 Taking on challenges will be my route to achieving this, which I am eager to do.
-                Furthermore, I am always looking for ways to improve my skills and knowledge of the technologies I use and those that are emerging. 
+                Furthermore, I am always looking for ways to improve my skills and knowledge of the technologies I use
+                and those that are emerging.
             </p>
         </div>
     </section>
@@ -113,20 +108,66 @@
         </div>
     </section>
 
+    <section class="about-me mt-tt" id="section-05">
+        <div class="list-title mt-tt">
+            <h2 class="blue">Work Experience</h2>
+        </div>
+        <div>
+            <h3 class="link-work mt-8">7COMm - People and Tech to Transform</h3>
+        </div>
+        <div>
+            <p class="mt-5 ml-3 mr-3">
+                Here I work with React, React Native, Redux, Javascript, Typescript and
+                Material UI. My responsibilities are to develop new features, fix bugs
+                and improve the code base. To make these improvements, I use
+                technology best practices and software development best practices.
+                To do this, I interact with the team and those responsible for the
+                product to understand the needs and the best way to implement the
+                features.<br><br>
+                Software development using React, React Native and Redux;<br>
+                Software maintenance using React, React Native and Redux;<br>
+                Versioning with git, github, gitlab and azure;<br>
+                scrum and kanban methodologies;
+            </p>
+        </div>
+    </section>
+
     <section class="list-works mt-tt" id="section-02">
         <div class="list-title">
-            <h2 class="blue">Works</h2>
+            <h2 class="blue">Projects</h2>
         </div>
         <div class="list-item">
             <h5 class="color-gray mr-5">01.</h5>
+            <a href="https://github.com/PI2-Estacao-de-Recarga/ESDR-Front" class="link-work" target="blank">
+                <h3>ESDR</h3>
+            </a>
+            <p class="ml-3">
+                Mobile application to integrate a charging station for mobile devices and
+                light electric vehicles, using solar energy.
+            </p>
+        </div>
+        <div class="list-item">
+            <h5 class="color-gray mr-5">02.</h5>
+            <a href="https://www.revisae.com.br" class="link-work" target="blank">
+                <h3>RevisaÊ</h3>
+            </a>
+            <p class="ml-3">
+                A web application to automate document reviews based on a template
+                created and customizable by the user
+            </p>
+        </div>
+        <div class="list-item">
+            <h5 class="color-gray mr-5">03.</h5>
             <a href="https://github.com/fga-eps-mds/2020.2-Hortum" class="link-work" target="blank">
                 <h3>Hortum</h3>
             </a>
-            <p class="ml-3">Hortum is an application aimed at small producers in order to facilitate sales and increase
-                the dissemination of their products.</p>
+            <p class="ml-3">
+                Hortum is an application aimed at small producers in order to facilitate sales and increase
+                the dissemination of their products.
+            </p>
         </div>
         <div class="list-item">
-            <a href="https://github.com/matheuscvp" class="link-work" target="blank">
+            <a href="https://github.com/matheuscvp?tab=repositories" class="link-work" target="blank">
                 <h6>More Works</h6>
             </a>
         </div>
@@ -148,10 +189,10 @@
                 <h4 class="mt-2">Telegram</h4>
             </a>
             <a href="./MatheusPinheiro-Resume.pdf" target="blank">
-                <h4 class="mt-2">Get my CV - EN/US</h4>
+                <h4 class="mt-2">Get my Resume- EN/US</h4>
             </a>
             <a href="./MatheusPinheiro-Curriculo.pdf" target="blank">
-                <h4 class="mt-2 mb-9">Get my CV - PT/BR</h4>
+                <h4 class="mt-2 mb-9">Meu Currículo - PT/BR</h4>
             </a>
         </div>
     </section>
@@ -227,6 +268,17 @@
                 }
             });
 
+            gsap.from("#section-05 div", {
+                duration: 1,
+                y: 300,
+                opacity: 0,
+                stagger: { each: 0.2 },
+                ease: "power3.out",
+                scrollTrigger: {
+                    trigger: "#section-05",
+                }
+            });
+
             gsap.from("#section-02 div", {
                 duration: 1,
                 y: 300,
@@ -235,7 +287,6 @@
                 ease: "power3.out",
                 scrollTrigger: {
                     trigger: "#section-02",
-
                 }
             });
             gsap.from("#section-03 div", {
